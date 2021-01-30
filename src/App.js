@@ -7,6 +7,7 @@ import Modal from './Components/Modal/Modal'
 import './styles.css'
 import axios from 'axios'
 
+
 export default class App extends Component {
   state = {
     mass: [],
@@ -63,7 +64,7 @@ export default class App extends Component {
   }
 
   handlePlus = () => {
-    this.setState((prevState, props) => ({
+    this.setState((prevState) => ({
       page: prevState.page + 1
     }), this.goSeacrh);
   }
